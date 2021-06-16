@@ -1,13 +1,18 @@
-import { Link } from 'react-router-dom';
+import { Nav } from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar';
 
-const Navbar = () => {
+const Navibar = () => {
   return ( 
-    <div className="navbar">
-      <h1>Game Reviews</h1>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
+    <div className="navibar">
+      <Navbar bg="dark" variant="dark">
+        <Nav className="mr-auto">
+          <Navbar.Brand href="/">Game Reviews</Navbar.Brand>
+          <Nav.Link href="/contact">Contact</Nav.Link>
+          <Nav.Link href="/about">About</Nav.Link>
+        </Nav>
+      </Navbar>
     </div>
    );
 }
  
-export default Navbar;
+export default Navibar;

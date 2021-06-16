@@ -1,0 +1,29 @@
+{
+  "games": [
+    {
+      "title": "Dota 2",
+      "body": "A 5v5 MOBA",
+      "id": 1
+    },
+    {
+      "title": "League of Legends",
+      "body": "A 5v5 MOBA",
+      "id": 2
+    },
+    {
+      "title": "Valorant",
+      "body": "A 5v5 First-Person Shooter",
+      "id": 3
+    },
+    {
+      "title": "Apex Legends",
+      "body": "A Battle Royale with abilities",
+      "id": 4
+    },
+    {
+      "title": "NBA 2k21",
+      "body": "A pro-basketball game simulator",
+      "id": 5
+    }
+  ]
+}
