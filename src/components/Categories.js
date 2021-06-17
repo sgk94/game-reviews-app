@@ -1,4 +1,3 @@
-import { Container, Row, Col} from 'react-bootstrap';
 import GameCards from './GameCards';
 
 const Categories = () => {

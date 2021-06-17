@@ -1,0 +1,54 @@
+/*variables*/
+$breakpoint-mobile: 700px
+
+body
+  margin: 0
+  padding: 0
+  font-family: Arial, Helvetica, sans-serif
+
+.navbar
+  width: 100%
+  height: 70px
+  display: flex
+  align-items: center
+  justify-content: space-around
+  background: #232323
+  color: #ccc
+
+.logo 
+  letter-spacing: 3px
+
+.nav 
+  display: flex 
+  justify-content: space-around 
+  width: 30%
+
+.navbar a
+  color: #ccc
+  font-size: 1.2em
+  text-decoration: none
+
+.nav li
+  list-style: none 
+  margin: 0
+
+.burger
+  font-size: 1.2em
+  display: none
+
+@media screen and (max-width: $breakpoint-mobile)
+  .burger
+    display: block
+  .nav
+    margin: 0
+    background: #343434
+    position: absolute
+    right: 0
+    top: 70px
+    width: 50%
+    height: calc(100% - 70px)
+    flex-direction: column 
+    justify-content: space-around 
+    padding: 0
+  .navlink
+    text-align: center

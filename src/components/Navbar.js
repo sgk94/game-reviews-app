@@ -1,18 +1,23 @@
-import { Nav } from 'react-bootstrap';
-import Navbar from 'react-bootstrap/Navbar';
+import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Navibar = () => {
+const Navbar = () => {
   return ( 
-    <div className="navibar">
-      <Navbar bg="dark" variant="dark">
-        <Nav className="mr-auto">
-          <Navbar.Brand href="/">Game Reviews</Navbar.Brand>
-          <Nav.Link href="/contact">Contact</Nav.Link>
-          <Nav.Link href="/about">About</Nav.Link>
-        </Nav>
-      </Navbar>
+    <div className="navbar">
+      <h1 className="logo">Game Reviews</h1>
+      <ul className="nav">
+        <li className="navlink">
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li className="navlink">
+          <Link to="/about">About</Link>
+        </li>
+      </ul>
+      <div className="burger">
+        <FontAwesomeIcon icon="bars" />
+      </div>
     </div>
    );
 }
  
-export default Navibar;
+export default Navbar;
