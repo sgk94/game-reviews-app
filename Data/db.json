@@ -3,26 +3,31 @@
     {
       "title": "Dota 2",
       "body": "A 5v5 MOBA",
+      "img": "https://cdn2.steamgriddb.com/file/sgdb-cdn/thumb/d8732349cbe3ba46021a86345bb98c4c.jpg",
       "id": 1
     },
     {
       "title": "League of Legends",
       "body": "A 5v5 MOBA",
+      "img": "https://cdn2.steamgriddb.com/file/sgdb-cdn/thumb/cf29ee336b07c0572c810f62f5543525.jpg",
       "id": 2
     },
     {
       "title": "Valorant",
       "body": "A 5v5 First-Person Shooter",
+      "img": "https://cdn2.steamgriddb.com/file/sgdb-cdn/thumb/5ca004abbbd796edd8714384210f0fa0.jpg",
       "id": 3
     },
     {
       "title": "Apex Legends",
       "body": "A Battle Royale with abilities",
+      "img": "https://cdn2.steamgriddb.com/file/sgdb-cdn/thumb/ba14961ae2176d0e7426952d44b846c7.jpg",
       "id": 4
     },
     {
       "title": "NBA 2k21",
       "body": "A pro-basketball game simulator",
+      "img": "https://cdn2.steamgriddb.com/file/sgdb-cdn/thumb/5bec0406de1e6b1ec02df93e5e511d38.jpg",
       "id": 5
     }
   ]

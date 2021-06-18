@@ -4,7 +4,11 @@ const GameCards = ({games}) => {
     <div className="game-cards">
           {games.map((game) => (
           <div className="game-preview" key={ game.id }>
-            <div>{game.title}</div>
+            <div className="card">
+              <img src={game.img} alt="" />
+              <div>{game.title}</div>
+              <div>{game.body}</div>
+            </div>
           </div>
             ))}
     </div>
