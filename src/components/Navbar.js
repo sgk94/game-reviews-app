@@ -18,6 +18,9 @@ const Navbar = () => {
       <h1 className="logo">Game Reviews</h1>
       <ul className="nav" style={{right: sideNav}}>
         <li className="navlink">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="navlink">
           <Link to="/contact">Contact</Link>
         </li>
         <li className="navlink">

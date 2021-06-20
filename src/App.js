@@ -6,10 +6,11 @@ import AddGame from './components/AddGame';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import GameCardDetails from './components/GameCardDetails';
 
-library.add(faBars)
+library.add(faBars, faThumbsUp, faThumbsDown)
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route exact path="/addgame">
               <AddGame/>
+            </Route>
+            <Route exact path="/games/:id">
+              <GameCardDetails/>
             </Route>
           </Switch>
         </div>
