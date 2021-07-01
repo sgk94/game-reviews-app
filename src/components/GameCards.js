@@ -11,10 +11,11 @@ const GameCards = ({games}) => {
             <Link className="game-details-link" to={`/games/${game.id}`}>
               <div className="card-img" style={{ backgroundImage: `url(${game.img})`}}>
                 <div className="card-content">
-                  <h2 className="icons">Icons
-                    <FontAwesomeIcon icon="thumbs-up" />
-                    <FontAwesomeIcon icon="thumbs-down" />
-                  </h2>
+                  <div className="icons-container">
+                    <div className="icons"><FontAwesomeIcon icon="plus" /></div>
+                    <div className="icons"><FontAwesomeIcon icon="thumbs-up" /></div>
+                    <div className="icons"><FontAwesomeIcon icon="thumbs-down" /></div>
+                  </div>
                   <p>This is where review will go</p>
                 </div>
               </div>

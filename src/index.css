@@ -19,8 +19,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  color: #ccc;
-  background: #c2cad0;
+  color: white;
+  background: #0E0B16;
 }
 
 .navbar {
@@ -34,7 +34,7 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: #242424;
+  background-color: #0005;
 }
 
 .logo {
@@ -51,7 +51,7 @@ body {
 }
 
 .navbar a {
-  color: #ccc;
+  color: white;
   font-size: 1.2em;
   text-decoration: none;
 }
@@ -66,6 +66,13 @@ body {
   display: none;
 }
 
+.banner {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .card-category {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,9 +83,12 @@ body {
 }
 
 .card {
+  border-radius: 12px;
+  border-style: solid;
+  border-color: #4717F6;
   text-align: center;
   width: 320px;
-  margin: 3px;
+  margin: 3px 10px;
 }
 
 .card:hover {
@@ -109,14 +119,35 @@ body {
   transition: 0.3s;
   border-radius: 8px;
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
 .card-content {
-  background: #242424;
+  background: #0E0B16;
+  border-top: 3px solid #4717F6;
   -webkit-transform: translateY(118%);
           transform: translateY(118%);
   padding-bottom: 3px;
+}
+
+.icons-container {
+  margin: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icons {
+  font-size: 25px;
+  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .game-details-link {
@@ -125,7 +156,31 @@ body {
 }
 
 .game-details-link:active {
-  color: red;
+  color: #4717F6;
+}
+
+.stack-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1, 1fr;
+      grid-template-columns: 1, 1fr;
+  position: relative;
+}
+
+.banner-container {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.game-cards {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding-top: 47%;
+  z-index: 1;
 }
 
 @media screen and (max-width: 700px) {

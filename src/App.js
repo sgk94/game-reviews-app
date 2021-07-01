@@ -6,14 +6,14 @@ import AddGame from './components/AddGame';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faBars, faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faThumbsUp, faThumbsDown, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import GameCardDetails from './components/GameCardDetails';
 
-library.add(faBars, faThumbsUp, faThumbsDown)
-
+library.add(faBars, faThumbsUp, faThumbsDown, faPlus)
+console.log(process.env.REACT_APP_STEAM_API_KEY)
 function App() {
-
+ 
   return (
     <Router>
       <div className="App">
